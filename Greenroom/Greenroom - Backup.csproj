@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Authentication\Bearer\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
 
