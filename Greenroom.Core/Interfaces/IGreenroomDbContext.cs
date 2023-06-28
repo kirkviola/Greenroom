@@ -1,4 +1,4 @@
-﻿using Greenroom.Core.Models;
+﻿using Greenroom.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
