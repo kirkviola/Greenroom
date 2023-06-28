@@ -14,6 +14,13 @@ namespace Greenroom.Domain.Entities
         public string Email { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
 
-        public User() { }
+        public IEnumerable<UserCourse> UserCourses { get; set; }
+        public IEnumerable<AssignmentResponse> AssignmentResponses { get; set; }
+
+        public User() 
+        {
+            this.UserCourses = new List<UserCourse>(); 
+            this.AssignmentResponses = new List<AssignmentResponse>();
+        }
     }
 }
