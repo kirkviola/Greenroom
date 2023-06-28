@@ -26,11 +26,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GreenroomFrontend", "Greenr
 		SlnRelativePath = "Greenroom.WebUiAngular\"
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenroom.Core", "Greenroom.Core\Greenroom.Core.csproj", "{E204E796-6BB2-4081-AA4E-8A25D9BF8685}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenroom.Application", "Greenroom.Application\Greenroom.Application.csproj", "{E204E796-6BB2-4081-AA4E-8A25D9BF8685}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenroom.Infrastructure", "Greenroom.Infrastructure\Greenroom.Infrastructure.csproj", "{54D61A84-5483-406C-8F03-E8BBDC5D4D19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenroom.Domain", "Greenroom.Domain\Greenroom.Domain.csproj", "{8DC96FA5-9B54-47B4-BD25-3B5B38448E4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenroom.Domain", "Greenroom.Domain\Greenroom.Domain.csproj", "{8DC96FA5-9B54-47B4-BD25-3B5B38448E4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

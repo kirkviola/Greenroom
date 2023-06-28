@@ -1,4 +1,4 @@
-﻿using Greenroom.Core.Interfaces;
+﻿using Greenroom.Application.Interfaces;
 using Greenroom.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 

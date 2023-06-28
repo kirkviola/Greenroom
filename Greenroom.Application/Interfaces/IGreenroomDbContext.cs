@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenroom.Core.Interfaces
+namespace Greenroom.Application.Interfaces
 {
     public interface IGreenroomDbContext
     {
