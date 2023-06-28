@@ -11,5 +11,11 @@ namespace Greenroom.Application.Interfaces
     public interface IGreenroomDbContext
     {
         DbSet<User> Users { get; }
+        DbSet<Course> Courses { get; }
+        DbSet<UserCourse> UserCourses { get; }
+        DbSet<Assignment> Assignments { get; }
+        DbSet<AssignmentResponse> AssignmentResponses { get; }
+        DbSet<Material> Materials { get; }
+        DbSet<ResponseMaterial> ResponseMaterials { get; }
     }
 }
