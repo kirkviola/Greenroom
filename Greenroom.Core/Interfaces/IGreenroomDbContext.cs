@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Greenroom.Core.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace Greenroom.Core.Interfaces
 {
     public interface IGreenroomDbContext
     {
-        DbSet
+        DbSet<User> Users { get; }
     }
 }
