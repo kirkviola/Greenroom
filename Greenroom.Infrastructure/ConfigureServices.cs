@@ -14,8 +14,11 @@ namespace Greenroom.Infrastructure
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration) 
         {
+            // Local connection string from user secrets
+            var connectionString = configuration["dev:ConnectionString"]!;
+
             services.AddDbContext<GreenroomDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("devConnection")));
+                options.UseSqlServer(configuration.GetConnectionString(connectionString)));
 
             services.AddScoped<IGreenroomDbContext>(provider => provider.GetRequiredService<GreenroomDbContext>());
 

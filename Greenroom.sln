@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenroom.WebApp", "Greenroom\Greenroom.WebApp.csproj", "{67281E24-EC66-4989-9E51-5766F3D80E2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenroom.WebApp", "Greenroom.WebApp\Greenroom.WebApp.csproj", "{67281E24-EC66-4989-9E51-5766F3D80E2B}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GreenroomFrontend", "GreenroomFrontend\", "{8652B259-5BF4-4808-8ABF-6265FD5161A7}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GreenroomFrontend", "Greenroom.WebUiAngular\", "{8652B259-5BF4-4808-8ABF-6265FD5161A7}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_61337"
@@ -26,9 +26,9 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GreenroomFrontend", "Greenr
 		SlnRelativePath = "GreenroomFrontend\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenroom.Core", "Greenroom.Core\Greenroom.Core.csproj", "{E204E796-6BB2-4081-AA4E-8A25D9BF8685}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenroom.Core", "Greenroom.Core\Greenroom.Core.csproj", "{E204E796-6BB2-4081-AA4E-8A25D9BF8685}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenroom.Infrastructure", "Greenroom.Infrastructure\Greenroom.Infrastructure.csproj", "{54D61A84-5483-406C-8F03-E8BBDC5D4D19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenroom.Infrastructure", "Greenroom.Infrastructure\Greenroom.Infrastructure.csproj", "{54D61A84-5483-406C-8F03-E8BBDC5D4D19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
