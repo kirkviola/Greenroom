@@ -9,26 +9,28 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GreenroomFrontend", "Greenr
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_61337"
-		Debug.AspNetCompiler.PhysicalPath = "GreenroomFrontend\"
+		Debug.AspNetCompiler.PhysicalPath = "Greenroom.WebUiAngular\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61337\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_61337"
-		Release.AspNetCompiler.PhysicalPath = "GreenroomFrontend\"
+		Release.AspNetCompiler.PhysicalPath = "Greenroom.WebUiAngular\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61337\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "61337"
-		SlnRelativePath = "GreenroomFrontend\"
+		SlnRelativePath = "Greenroom.WebUiAngular\"
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenroom.Core", "Greenroom.Core\Greenroom.Core.csproj", "{E204E796-6BB2-4081-AA4E-8A25D9BF8685}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenroom.Infrastructure", "Greenroom.Infrastructure\Greenroom.Infrastructure.csproj", "{54D61A84-5483-406C-8F03-E8BBDC5D4D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenroom.Domain", "Greenroom.Domain\Greenroom.Domain.csproj", "{8DC96FA5-9B54-47B4-BD25-3B5B38448E4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +54,10 @@ Global
 		{54D61A84-5483-406C-8F03-E8BBDC5D4D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54D61A84-5483-406C-8F03-E8BBDC5D4D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54D61A84-5483-406C-8F03-E8BBDC5D4D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC96FA5-9B54-47B4-BD25-3B5B38448E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC96FA5-9B54-47B4-BD25-3B5B38448E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC96FA5-9B54-47B4-BD25-3B5B38448E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC96FA5-9B54-47B4-BD25-3B5B38448E4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

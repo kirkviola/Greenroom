@@ -1,5 +1,5 @@
 ﻿using Greenroom.Core.Interfaces;
-using Greenroom.Core.Models;
+using Greenroom.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Greenroom.Infrastructure;
