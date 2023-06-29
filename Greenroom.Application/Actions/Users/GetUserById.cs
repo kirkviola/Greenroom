@@ -1,7 +1,7 @@
 ﻿using Greenroom.Application.Actions.Users.Interfaces;
 using Greenroom.Application.Interfaces;
+using Greenroom.Application.Exceptions;
 using Greenroom.Domain.Entities;
-using Greenroom.Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Greenroom.Application.Actions.Users
