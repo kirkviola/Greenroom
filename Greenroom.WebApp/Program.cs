@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddInfrastructureServices(builder.Configuration);
-builder.Services.AddWebAppServices();
+builder.Services.AddWebAppServices(builder.Configuration);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -19,7 +19,10 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseCors(builder.Configuration.GetValue<string>("LocalOrigin")!);
 }
+
+//TODO: Handle passing Jwt authentication for requests - determine origin rules
 
 //app.UseHttpsRedirection();
 app.UseAuthentication();
