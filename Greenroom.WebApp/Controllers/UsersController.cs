@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Greenroom.WebApp.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class UsersController : ApiControllerBase
     {
         private readonly IGetUserById _getUserById;
