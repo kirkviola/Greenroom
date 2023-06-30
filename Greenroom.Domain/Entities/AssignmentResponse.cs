@@ -10,6 +10,7 @@ namespace Greenroom.Domain.Entities
     {
         public int Id { get; set; }
         public string? ResponseBody { get; set; }
+        public DateTime UpdateDate { get; set; } = DateTime.Now;
         public int UserId { get; set; }
         public int AssignmentId { get; set; }
 
