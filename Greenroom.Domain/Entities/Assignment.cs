@@ -17,6 +17,8 @@ namespace Greenroom.Domain.Entities
         public DateTime CreateDate { get; set; } = DateTime.Now;
         [Timestamp]
         public DateTime UpdateDate { get; set; } = DateTime.Now;
+        [Timestamp]
+        public DateTime? DueDate { get; set; }
         public int CourseId { get; set; }
 
         public virtual Course Course { get; set; }

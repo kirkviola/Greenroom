@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Greenroom.Application.Exceptions
 {
-    public class UserNotFoundException : Exception
+    public class AssignmentNotFoundException : Exception
     {
-        public UserNotFoundException(int id) : base($"User not found with given id: {id}") { }
+        public AssignmentNotFoundException(int id): base($"No Assignment found with given id: {id}") { }
     }
 }

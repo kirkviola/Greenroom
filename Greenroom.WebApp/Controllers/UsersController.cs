@@ -8,17 +8,17 @@ namespace Greenroom.WebApp.Controllers
     [Authorize]
     public class UsersController : ApiControllerBase
     {
-        private readonly IGetUserById getUserById;
+        private readonly IGetUserById _getUserById;
 
         public UsersController(IGetUserById getUserById)
         {
-            this.getUserById = getUserById;
+            _getUserById = getUserById;
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUserById(int id)
         {
-            return await getUserById.GetUserAsync(id);
+            return await _getUserById.GetUserAsync(id);
         }
     }
 }

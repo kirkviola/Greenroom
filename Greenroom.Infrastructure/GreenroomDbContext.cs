@@ -61,6 +61,9 @@ public class GreenroomDbContext : DbContext, IGreenroomDbContext
             a.Property(assign => assign.Name).HasMaxLength(50).IsRequired();
             a.Property(assign => assign.Description).HasMaxLength(300).IsRequired(false).HasDefaultValue(null);
             a.Property(assign => assign.MaxValue).HasColumnType("decimal(4,2)").HasDefaultValue(null);
+            a.Property(assign => assign.CreateDate).IsRequired().HasDefaultValue(DateTime.Now);
+            a.Property(assign => assign.UpdateDate).IsRequired().HasDefaultValue(DateTime.Now);
+            a.Property(assign => assign.DueDate).IsRequired(false).HasDefaultValue(null);
             a.HasOne(a => a.Course)
                 .WithMany(c => c.Assignments)
                 .HasForeignKey(a => a.CourseId) 
@@ -71,6 +74,7 @@ public class GreenroomDbContext : DbContext, IGreenroomDbContext
             ar.ToTable("AssignmentResponses");
             ar.HasKey(a => a.Id);
             ar.Property(ar => ar.ResponseBody).HasMaxLength(1500).IsRequired(false).HasDefaultValue(null);
+            ar.Property(ar => ar.UpdateDate).IsRequired().HasDefaultValue(DateTime.Now);
             ar.HasOne(ar => ar.Assignment)
                 .WithMany(a => a.AssignmentResponses)
                 .HasForeignKey(ar => ar.AssignmentId)

@@ -4,6 +4,7 @@ using Greenroom.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Greenroom.Infrastructure.Migrations
 {
     [DbContext(typeof(GreenroomDbContext))]
-    partial class GreenroomDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230630162837_DateFieldsForAssignmentAdded")]
+    partial class DateFieldsForAssignmentAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
