@@ -15,8 +15,8 @@ namespace Greenroom.WebApp.Controllers
             _getUserById = getUserById;
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUserById(int id)
+        [HttpGet]
+        public async Task<ActionResult<User>> GetUserById([FromQuery] int id)
         {
             return await _getUserById.GetUserAsync(id);
         }
