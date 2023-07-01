@@ -3,7 +3,7 @@ import { baseUrl } from '../shared/app-constants';
 import { User, UserService } from '../users/user.service';
 
 @Component({
-  selector: 'app-landing',
+  selector: 'landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss']
 })

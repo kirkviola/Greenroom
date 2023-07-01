@@ -6,6 +6,7 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SideNavModule } from './side-nav/side-nav.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     AppNavbarComponent,
     SharedModule,
+    SideNavModule,
     LandingModule,
     BrowserAnimationsModule,
   ],
