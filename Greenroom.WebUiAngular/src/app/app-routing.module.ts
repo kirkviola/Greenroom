@@ -6,6 +6,9 @@ const routes: Routes = [
 
   { path: 'landing',
     loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule)
+  } ,
+  { path: 'courses',
+    loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule)
   }
 ];
 
