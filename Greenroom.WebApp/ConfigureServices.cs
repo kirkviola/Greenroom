@@ -4,6 +4,8 @@ using Greenroom.Application.Actions.Courses;
 using Greenroom.Application.Actions.Courses.Interfaces;
 using Greenroom.Application.Actions.Users;
 using Greenroom.Application.Actions.Users.Interfaces;
+using Greenroom.Application.Interfaces;
+using Greenroom.WebApp.Services;
 using System.Runtime.CompilerServices;
 
 namespace Greenroom.WebApp
@@ -12,6 +14,11 @@ namespace Greenroom.WebApp
     {
         public static IServiceCollection AddWebAppServices(this IServiceCollection services, IConfiguration configuration)
         {
+            // Http Configurations
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
+
+            services.AddHttpContextAccessor();
+
             // Use case registry
             services.AddScoped<IGetUserById, GetUserById>();
             services.AddScoped<IGetCourseById, GetCourseById>();
